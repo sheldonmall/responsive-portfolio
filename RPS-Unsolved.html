@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Random Numbers</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+        var rpsArray = ["r","p","s"];
+        var userWins=0;
+        // var userLoses=0;
+        var compWins=0;
+        // var compLoses=0;
+        var bothTie=0;
+        var rpsUser1;
+        var rpsUser;
+        var rpsComp;
+        var playAgain=true;
+           // While user wants to play more times
+        while(playAgain){
+            // Loop 10 times
+            for (var i = 0; i < 10; i++) {
+                // Generate a random decimal number between 0 and 2
+                // rpsUser1="";
+                rpsUser1="";
+                rpsUser="";
+                rpsComp="";
+                rpsUser1=prompt("Choose what you want: r-Rock, p-Paper or s-Scissor: ");
+                rpsUser=rpsUser1.trim().toLowerCase();
+                // rpsCompNum=Math.floor(Math.random()*3);
+                // rpsComp=rpsArray[rpsCompNum];
+                rpsComp=rpsArray[Math.floor(Math.random() * rpsArray.length)];
+                // rpsComp = Math.floor(Math.random() *3)+1;
+
+                // Display in console
+                // console.log("Index: " + rpsCompNum);
+                console.log("rpsUser: " + rpsUser);
+                console.log("rpsComp: " + rpsComp);
+                if(rpsComp===rpsUser){
+                    alert("Its a Tie: " + rpsUser + " "+ rpsComp);
+                    bothTie++;                
+                }
+                else if (rpsUser==="r") {
+                        if (rpsComp==="s") {
+                            alert("User wins: " + rpsUser + " "+ rpsComp);
+                            userWins++;
+                        }
+                        else if (rpsComp==="p") {
+                            alert("Comp wins: " + rpsUser + " "+ rpsComp);
+                            compWins++;
+                        }
+                }
+                else if (rpsUser="s") {
+                        if (rpsComp==="p") {
+                            alert("User wins: " + rpsUser + " "+ rpsComp);
+                            userWins++;
+                        }
+                        else if (rpsComp==="r") {
+                            alert("Comp wins: " + rpsUser + " "+ rpsComp);
+                            compWins++;
+                        }
+                }
+                else if (rpsUser="p") {
+                        if (rpsComp==="r") {
+                            alert("User wins: " + rpsUser + " "+ rpsComp);
+                            userWins++;
+                        }
+                        else if (rpsComp==="s") {
+                            alert("Comp wins: " + rpsUser + " "+ rpsComp);
+                            compWins++;
+                        }
+                }
+                alert("User: " + userWins+ " Comp: "+ compWins+" Tie: " + bothTie) ;
+                // alert(compWins);
+                // alert(bothTie);
+                playAgain=confirm("Do you wish to play again? ");
+                if(!playAgain) {
+                    playAgain=false;
+                    i=10;
+                    alert("Final Score: User: " + userWins+ " Comp: "+ compWins+" Tie: " + bothTie) ;
+                    if(userWins === compWins || compWins === userWins) {
+                        alert("Its a Tie !!!");
+                   }
+                    else if(userWins > compWins) {
+                        alert("User wins. Congratulations!");                        
+                    }
+                    else {
+                        alert("Computer wins. Better luck next time!");
+                    }
+                }
+            }
+            console.log(userWins);
+            // console.log(userLoses);
+            console.log(compWins);
+            // console.log(compLoses);
+            console.log(bothTie);
+            console.log(rpsUser);
+            console.log(rpsComp);
+            console.log(playAgain);
+            
+        }
+        
+     
+    </script>
+  </body>
+</html>

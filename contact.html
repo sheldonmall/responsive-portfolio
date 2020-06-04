@@ -1,0 +1,108 @@
+<!-- This is the homework for CSS-Bootstrap 
+I have used and combined format and code from different exercises in this module to create this website. 
+I kept building and enhacing this website as we progressed through each session in this module. 
+Of course, I have applied the skills I had learnt to make it all work. -->
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    
+  <meta charset="UTF-8">
+  <title>Contact Me</title>
+
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <!-- I am also bringing in reset and style stylesheets here-->
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">   
+
+</head>
+
+<body>
+    <!-- This is my navbar.
+    Clicking on my name in the navbar will always take us to the Home page. -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-g" style="background: rgb(195, 218, 238);">
+        <a class="navbar-brand" style="font-size: 1.5rem;background-color: rgb(78, 197, 191) ;"href="index.html">Sheldon Mall</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="about.html">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">My Portfolio</a>
+            </li>
+            <!-- I have removed the "Contact Me" link from this page as we are currently on the Contact Me page. -->
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Me</a>
+            </li>             -->
+          </ul>          
+        </div>
+    </nav>    
+    
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+          <!-- This is an introduction about myself that goes on the top-->
+            <div class="card">
+              <div class="card-body" style="font-style: regular; font-weight: bold;">
+                CONTACT ME
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6" style="margin-top: 1rem;">
+            <img class="my-pic" img src="Sheldon-2020-1.jpeg" alt="Sheldon" style="width:300px; height:200px;"/>
+          </div>
+          <div class="col-lg-6" style="margin-top: 1rem;">      
+            <h2>Here are my social coordinates to contact me.</h2><br>
+            <ul> 
+                <li><strong>Email:</strong> <a href="#">sheldoniznow@gmail.com</a></li>
+                <li><strong>Github:</strong> <a href="https://sheldonmall.github.io" target="_blank">github.com/sheldonmall</a></li>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sheldonmall" target="_blank">LinkedIn</a></li>
+                <li><strong>Phone:</strong> <a href="#">416-436-6083</a></li>
+              </ul>
+          </div>
+        </div>
+               
+        <br>
+        <div class="row">
+          <div class="col-lg-12">
+            <!-- This is the copyright bar at the bottom. -->
+            <div class="card">
+              <div class="card-body">
+                <div class="text-center">
+                    <p>All Rights Reserved</p>                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <!-- Here I have kept some scripts required to allow above Bootstrap components to work.
+    **** I noticed that if I exclude these, the navbar "hamburger" stops working when screen size is reduced. **** -->
+      <script
+        src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"
+      ></script>    
+    
+</body>
+
+</html>
