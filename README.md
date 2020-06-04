@@ -16,9 +16,13 @@ The Home page of my website loads when launched. This is the landing page that s
 My Task list for developing this website:
 
 [x] Building website
+
 [x] Testing all links
+
 [ ] User testing
+
 [ ] User feedback 
+
 
 ## Credits
 
